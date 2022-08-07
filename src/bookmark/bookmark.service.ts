@@ -1,14 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { Bookmark } from './types/bookmark';
+import { Bookmark } from '@prisma/client';
 
 @Injectable()
 export class BookmarkService {
   allBooks(): Bookmark[] {
-    return [
-      {
-        name: 'Bookmark 1',
-        content: 'This is a bookmark 1',
-      },
-    ];
+    return [];
   }
 }

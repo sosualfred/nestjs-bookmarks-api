@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
+import { Bookmark } from '@prisma/client';
 import { BookmarkService } from './bookmark.service';
-import { Bookmark } from './types/bookmark';
 
 @Controller('bookmark')
 export class BookmarkController {
